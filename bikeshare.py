@@ -132,10 +132,10 @@ def station_stats(df):
     most_common_end_station = df['End Station'].mode()[0]
     print('Most commonly used end station:', most_common_end_station)
 
-    # TO DO: display most frequent combination of start station and end station trip
+    # TO DO: display most common combination of start station and end station trip
     df['Combination'] = df['Start Station'] + 'to ' + df['End Station']
-    most_frequent_combination = df['Combination'].mode()[0]
-    print('Most frequent combination of start station and end station trip:', most_frequent_combination)
+    most_common_combination = df['Combination'].mode()[0]
+    print('Most frequent combination of start station and end station trip:', most_common_combination)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
