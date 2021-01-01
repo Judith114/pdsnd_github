@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import tabulate from tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -131,10 +132,10 @@ def station_stats(df):
     most_common_end_station = df['End Station'].mode()[0]
     print('Most commonly used end station:', most_common_end_station)
 
-    # TO DO: display most frequent combination of start station and end station trip
+    # TO DO: display most common combination of start station and end station trip
     df['Combination'] = df['Start Station'] + 'to ' + df['End Station']
-    most_frequent_combination = df['Combination'].mode()[0]
-    print('Most frequent combination of start station and end station trip:', most_frequent_combination)
+    most_common_combination = df['Combination'].mode()[0]
+    print('Most frequent combination of start station and end station trip:', most_common_combination)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -195,16 +196,14 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
-    """Displays 5 rows of data from the file of the selected city per request"""
+    """Displays rows of data from the file of the selected city"""
 
-    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
-    start_loc = 0
-    while view_data=="yes":
-        print(df.iloc[start_loc:start_loc+5])
-        start_loc += 5
-        view_display = input('Do you wish to continue?: ').lower()
-        if view_display != 'yes':
+    while True:
+        display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+        if display_data.lower() != 'yes':
             break
+    print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+    i+=5
 
 
 
