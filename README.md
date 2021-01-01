@@ -1,42 +1,43 @@
 ### Date created
 30.12.2020
 
-### Project Title
+## Project Title
 Explore US Bikeshare data
 
-### Description
+## Description
 In this project, Python is used to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. Code is written to import the data and answer interesting questions about it by computing descriptive statistics. A script is written that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
-### Files used
+## Files used
+The following file includes the Python script:
 
-The bikeshare.py file includes the Python script.
+*bikeshare.py*
 
 Three further data files are provided by Motivate, a bike share system provider in the United States:
 
-chicago.csv
-new_york_city.csv
-washington.csv
+*chicago.csv*
+*new_york_city.csv*
+*washington.csv*
 
-The Datasets
+**The Datasets**
 Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
 
-Start Time (e.g., 2017-01-01 00:07:57)
-End Time (e.g., 2017-01-01 00:20:53)
-Trip Duration (in seconds - e.g., 776)
-Start Station (e.g., Broadway & Barry Ave)
-End Station (e.g., Sedgwick St & North Ave)
-User Type (Subscriber or Customer)
+    -   Start Time (e.g., 2017-01-01 00:07:57)
+    -   End Time (e.g., 2017-01-01 00:20:53)
+    -   Trip Duration (in seconds - e.g., 776)
+    -   Start Station (e.g., Broadway & Barry Ave)
+    -   End Station (e.g., Sedgwick St & North Ave)
+    -   User Type (Subscriber or Customer)
 
 The Chicago and New York City files also have the following two columns:
 
-Gender
-Birth Year
+    -   Gender
+    -   Birth Year
 
-### Credits
-Data structures and algorithms on python:
+## Credits
+**Data structures and algorithms on python:**
 http://greenteapress.com/thinkpython/html/index.html
 https://docs.google.com/viewer?a=v&pid=sites&srcid=dnVrbWFsYmFzYS5jb218d3d3fGd4OjU3NWZjOWU1MTM4ZTI4OQ
-Datetime:
+**Datetime:**
 https://docs.python.org/3/library/datetime.html
-Mode:
+**Mode:**
 https://www.geeksforgeeks.org/python-statistics-mode-function/
