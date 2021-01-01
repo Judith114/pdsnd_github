@@ -32,6 +32,11 @@ The Chicago and New York City files also have the following two columns:
 Gender
 Birth Year
 
-
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Data structures and algorithms on python:
+http://greenteapress.com/thinkpython/html/index.html
+https://docs.google.com/viewer?a=v&pid=sites&srcid=dnVrbWFsYmFzYS5jb218d3d3fGd4OjU3NWZjOWU1MTM4ZTI4OQ
+Datetime:
+https://docs.python.org/3/library/datetime.html
+Mode:
+https://www.geeksforgeeks.org/python-statistics-mode-function/
